@@ -1,0 +1,42 @@
+body{
+    box-sizing: border-box;
+    background-color: #eeebe3;
+}
+.wishlist {
+   
+    padding: 0px 70px 50px 70px;
+    position: relative;
+    overflow: hidden;
+}
+#MENU, #back {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 70px;
+    top: 35px;
+  }
+
+.judul {
+    text-align: center;
+    font-family: 'openSans';
+    font-size: 48px;
+    margin : 35px auto;
+}
+
+#Akun {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 1375px;
+    top: 35px;
+}
+.keterangan{
+    margin-bottom: 50px;
+
+    padding: 10px;
+    background-color: #d9d9d9;
+    width: fit-content;
+}
+.accordion{
+    background-color: #d9d9d9;
+}

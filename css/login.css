@@ -1,0 +1,44 @@
+body{
+    background-color: #E4FFAD;
+}
+
+.form {
+    position: absolute;
+    left:0px;
+    width:50%;
+}
+.header{
+    display: flex;
+    margin: 50px 150px;
+    width: 200px;
+    height: 30px;
+}
+.header p{
+    margin: auto 10px;
+    font-size: 24px;
+}
+.konten{
+    display: flex;
+}
+.container{
+    width: 380px;
+    height: 540px;
+    padding: 20px;
+    margin: 10px 200px;
+}
+.logo {
+    width: 20%;
+}
+.button{
+    justify-content: center;
+    display: block;
+}
+.btn btn-light{
+    display: flex;
+}
+.sign-up{
+    display: flex;
+}
+.back  {
+    width: 50px;
+}

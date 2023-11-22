@@ -1,0 +1,177 @@
+.bundle,
+.bundle * {
+  box-sizing: border-box;
+}
+.bundle {
+  background: #eeebe3;
+  padding: 0px 70px 50px 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+#MENU, #back {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 70px;
+    top: 35px;
+  }
+
+.judul {
+    text-align: center;
+    font-family: 'openSans';
+    font-size: 48px;
+    margin : 35px auto;
+}
+
+#Akun {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 1375px;
+    top: 35px;
+}
+.container{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+.subjudul{
+    text-align: left;
+    margin:20px 70px;
+}
+.Carousel {
+    justify-content: center;
+    margin: 70px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+h3,.seeAll{
+    display: inline;
+}
+
+.seeAll{
+    font-size: 24px;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 150px;
+    margin-left: 880px;
+}
+.highlight-bundle{
+    margin: 50px auto ;
+    
+}
+
+.container-bundle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.allign-center{
+    display: block;
+    margin: 20px auto;
+}
+.box-bundle{
+    width: 420px;
+    height:400px;
+    margin: 50px 10px auto 10px;
+    
+    display: block;
+}
+.box-bundle-image{
+    width: 420px;
+    height: 280px;
+    justify-content: center;
+    border: 5px solid;
+}
+.keterangan-box{
+    display: flex;
+}
+.nama{
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #d9d9d9;
+    width: 205px;
+    height: 90px;
+    margin-right: 10px;
+}
+.nama p{
+    margin: 5px auto;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+
+    margin : 20px;
+}
+.logo:hover{
+    background-color:lightblue;
+}
+
+/* sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; /* Sesuaikan tinggi sesuai kebutuhan Anda */
+    width: 250px; /* Sesuaikan lebar sesuai kebutuhan Anda */
+    z-index: 1000;
+    background-color: #fff;
+    transition: margin-left 0.3s ease;
+    transition: width 0.3s ease; /* Animasi lebar sidebar */
+  }
+  
+  .h-color {
+    transition: background-color 0.3s ease; /* Animasi warna garis pemisah */
+  }
+  
+  .sidebar li {
+    transition: opacity 0.3s ease; /* Animasi opasitas item sidebar */
+  }
+  
+  .sidebar a {
+    color: #000; /* Sesuaikan warna teks sesuai kebutuhan Anda */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    padding: 1rem;
+  }
+  
+  .main-container {
+    /* Properti lain yang sudah ada */
+    transition: margin-left 0.3s ease; /* Ganti nilai sesuai preferensi Anda */
+  }
+  
+  hr.h-color {
+    background: #000;
+  }
+  
+  .sidebar li.active a,
+  .sidebar li.active a:hover {
+    color: #000;
+  }
+  .sidebar li a {
+    color: #000;
+  }
+  
+  .judul {
+    text-align: center;
+    font-family: "openSans";
+    font-size: 48px;
+    margin: 35px auto;
+  }

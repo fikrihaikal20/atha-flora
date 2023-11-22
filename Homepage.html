@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <title>Atha Flora</title>
+  <link rel="stylesheet" type="text/css" href="css/homepage.css">
+
+</head>
+
+<body>
+  <div class=home-page>
+
+    <!-- Navbar -->
+    <div class="Header container z-1">
+      <div class="navlink d-flex justify-content-between">
+
+        <!-- list Menu -->
+        <div class="menu" style="cursor: pointer;">
+          <i class="bi bi-list"></i>
+        </div>
+
+        <!-- LOGO -->
+        <a href=""><img id="logoHome" src="images\Group 33382.png" /></a>
+
+        <div class=" d-flex d-none d-md-block">
+
+          <div class="d-flex">
+            <!-- Whistlist -->
+            <div class="whistlist p-2">
+              <a href="wishlist.html"><i class="bi bi-bag-heart-fill" style="font-size: 5vw;"></i></a>
+            </div>
+
+            <!-- cart -->
+            <div class="cart p-2">
+              <a href="keranjang.html"><i class="bi bi-cart-fill" style="font-size: 5vw;"></i></a>
+            </div>
+
+            <!-- Account -->
+            <div class="account p-2">
+              <a href="login.html"><i class="bi bi-person-fill" style="font-size: 5vw;"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- sidebar -->
+    <div class="main-container d-flex d-none">
+      <div class="sidebar" id="side_nav">
+        <ul class="list-unstyled px-2">
+          <!-- Close icon -->
+          <li>
+            <a href=""><i class="bi bi-x" style="font-size: 3rem;"></i></a>
+          </li>
+
+          <li class="active"><a href="#" class="text-decoration-none px-3 py-2 d-block">HOME</a></li>
+
+          <li class=""><a href="Katalog.html" class="text-decoration-none px-3 py-2 d-block">KATALOG</a></li>
+
+          <li class=""><a href="BundlePromo.html" class="text-decoration-none px-3 py-2 d-block">BUNDLE & PROMOTION</a></li>
+
+          <li class=""><a href="CustomBucket.html" class="text-decoration-none px-3 py-2 d-block">CUSTOM BUCKET</a></li>
+
+          <li class=""><a href="wishlist.html" class="text-decoration-none px-3 py-2 d-block">WISHLIST</a></li>
+
+          <li class=""><a href="keranjang.html" class="text-decoration-none px-3 py-2 d-block">KERANJANG</a></li>
+
+          <li class=""><a href="#about-us" class="text-decoration-none px-3 py-2 d-block">ABOUT US</a></li>
+
+          <hr class="h-color mx-2">
+
+          <li class=""><a href="akun.html" class="text-decoration-none px-3 py-2 d-block">AKUN SAYA</a></li>
+
+          <li class=""><a href="#" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop" class="text-decoration-none px-3 py-2 d-block">LOG OUT</a></li>
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container mt-4">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Atha Flora.svg" class="img-fluid d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Seasonal Bundle.svg" class="img-fluid d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Best of November.svg" class="img-fluid d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container d-flex mt-3 justify-content-between">
+      <div class="katalog text-center p-4">
+        <a href="Katalog.html"><img class="imgClick" src="images/image 16.png"/></a>
+        <h2 class="textClick"> Katalog</h2>
+      </div>
+
+      <div class="bundle-promo text-center p-4">
+        <a href="BundlePromo.html"><img class="imgClick" src="images/Spring Sale.svg" /></a>
+        <h2 class="textClick">Bundle & Promo</h2>
+      </div>
+
+      <div class=" custom-your-own text-center p-4">
+        <a href=""><img class="imgClick" src="images/image 20.png" /></a>
+        <h2 class="textClick">Custom your own</h2>
+      </div>
+    </div>
+
+
+    <!-- About Us -->
+    <div class="container-fluid about-us" id="about-us">
+      <h1 id="judul-about-us" style="text-align: center;"> About Us</h2>
+      <div class="container d-md-flex justify-content-between">
+          <div style="text-align: center;">
+            <img class="image-about-us img-fluid" src="images/Kios.svg" />
+          </div>
+
+          <div class="container-teks">
+            <h3 id="judul-teks">Atha Flora</h3>
+            <p id="teks-about-us">
+              Selamat datang di Atha Flora, rumah bunga dan tanaman hias terbaik di
+              Jl. Masjid, Bumiaji, Kota Batu, Jawa Timur. Temukan buket bunga istimewa
+              dan tanaman hias memukau untuk momen-momen spesial Anda. Rasakan
+              keindahan alam dalam koleksi kami. <br /><br />Selamat berbelanja di
+              Atha Flora, di mana kecantikan alam dan pelayanan berkualitas bertemu.
+            </p>
+          </div>
+      </div>
+
+    </div>
+
+    <!-- footer  -->
+    <div class="container footer mt-2 p-3">
+      <div class="alamat" style="text-align: center;">
+        <h4>Alamat</h4>
+        <p>Jl. Masjid, RT.01 RW.02, Bumiaji, Kec. Bumiaji, Kota Batu, Jawa Timur 65331</p>
+      </div>
+      <div class="contact-us d-flex justify-content-between">
+        <div>
+          <h4>Contact Us</h4>
+        </div>
+        <div class="mt-4">
+          <p id="teks1" style="margin-bottom: -50px;">+62 813-9533-7967</p>
+          <p id="teks2">Instagram : @atha.flora</p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Log Out</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Anda yakin ingin keluar dari akun Anda?</p>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            Kembali
+          </button>
+          <a href="Homepage.html"><button type="button" class="btn btn-primary">Yakin</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Personal Script -->
+  <script src="script.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+</body>
+
+</html>

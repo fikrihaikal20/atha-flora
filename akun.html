@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+
+    <title>Atha Flora</title>
+    <link rel="stylesheet" type="text/css" href="css/akun.css" />
+  </head>
+
+  <body>
+    <div class="katalog">
+
+      <div class="Header container z-1 d-flex justify-content-between">
+        <!-- list Menu -->
+        <div
+          class="menu"
+          style="cursor: pointer; z-index: 2; align-self: center"
+        >
+          <i class="bi bi-list"></i>
+        </div>
+
+        <!-- Navbar -->
+        <div
+          class="navlink d-flex justify-content-center"
+          style="position: relative; z-index: 1; margin-right: 70px"
+        >
+          <!-- LOGO -->
+          <h2 class="judul">Akun Saya</h2>
+        </div>
+
+        <div
+          class="menu"
+          style="cursor: pointer; z-index: 2; align-self: center"
+        ></div>
+      </div>
+
+      <!-- sidebar -->
+      <div class="main-container d-flex d-none">
+        <div class="sidebar" id="side_nav">
+          <ul class="list-unstyled px-2">
+            <!-- Close icon -->
+            <li>
+              <a href=""><i class="bi bi-x" style="font-size: 3rem"></i></a>
+            </li>
+
+            <li class="active">
+              <a
+                href="Homepage.html"
+                class="text-decoration-none px-3 py-2 d-block"
+                >HOME</a
+              >
+            </li>
+
+            <li class="">
+              <a
+                href="Katalog.html"
+                class="text-decoration-none px-3 py-2 d-block"
+                >KATALOG</a
+              >
+            </li>
+
+            <li class="">
+              <a
+                href="BundlePromo.html"
+                class="text-decoration-none px-3 py-2 d-block"
+                >BUNDLE & PROMOTION</a
+              >
+            </li>
+
+            <li class="">
+              <a
+                href="CustomBucket.html"
+                class="text-decoration-none px-3 py-2 d-block"
+                >CUSTOM BUCKET</a
+              >
+            </li>
+
+            <li class="">
+              <a
+                href="wishlist.html"
+                class="text-decoration-none px-3 py-2 d-block"
+                >WISHLIST</a
+              >
+            </li>
+
+            <li class="">
+              <a
+                href="keranjang.html"
+                class="text-decoration-none px-3 py-2 d-block"
+                >KERANJANG</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="Homepage.html#about-us"
+                class="text-decoration-none px-3 py-2 d-block"
+                >ABOUT US</a
+              >
+            </li>
+
+            <hr class="h-color mx-2" />
+
+            <li class="">
+              <a href="akun.html" class="text-decoration-none px-3 py-2 d-block"
+                >AKUN SAYA</a
+              >
+            </li>
+
+            <li class="">
+              <a href="#" class="text-decoration-none px-3 py-2 d-block"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+                >LOG OUT</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <!-- Section Button -->
+    <div class="container container-button">
+      <a
+        href="manajemen-akun.html"
+        class="btn btn-light"
+        type="button"
+        id="button-1"
+        >Manajemen Akun</a
+      >
+      <a
+        href="pesanan-saya.html"
+        class="btn btn-light"
+        type="button"
+        id="button-1"
+        >Pesanan Saya</a
+      >
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-light"
+        id="button-3"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        Log Out
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Log Out</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <i class="bi bi-x-lg"></i>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Anda yakin ingin keluar dari akun Anda?</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Kembali
+              </button>
+              <a href="Homepage.html"><button type="button" class="btn btn-primary">Yakin</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- Personal Script -->
+    <script src="script.js"></script>
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+-->
+  </body>
+</html>
