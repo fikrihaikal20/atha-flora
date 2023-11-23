@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+body{
+  background: #eeebe3;
+}
 
 .home-page {
   background: #eeebe3;

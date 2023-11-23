@@ -4,7 +4,7 @@
 header i{
   margin: 10px;
 }
-.home-page {
+.katalog {
   background: #eeebe3;
   overflow: hidden;
 }
@@ -43,13 +43,13 @@ header i{
 
 h2 {
   text-align: center;
-  font-size: 48px;
+  font-size: 64px;
   margin-top: 30px;
 }
 
 .subjudul {
   text-align: left;
-  margin: 20px 150px;
+  margin: 20px 80px;
 }
 .Carousel {
   justify-content: center;
@@ -182,7 +182,9 @@ hr.h-color {
   .textClick {
     font-size: 15px;
   }
-
+  .judul{
+    font-size: 24px;
+  }
   .container-teks {
     width: 100%;
   }

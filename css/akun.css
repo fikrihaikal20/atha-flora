@@ -1,9 +1,13 @@
 * {
   box-sizing: border-box;
 }
+body{
+  background-color: #eeebe3;
+}
 
 .akun {
   background: #eeebe3;
+  padding: 0px 70px 50px 70px;
 }
 
 .bi-list {
@@ -122,7 +126,7 @@ p {
   transition: opacity 0.3s ease; /* Animasi opasitas item sidebar */
 }
 
-.sidebar a {
+.sidebar a, .Header a{
   color: #000; /* Sesuaikan warna teks sesuai kebutuhan Anda */
   text-decoration: none;
   font-size: 1rem;
