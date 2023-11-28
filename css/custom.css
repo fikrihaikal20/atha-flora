@@ -50,7 +50,11 @@ h2 {
     font-size: 24px;
     width: 200px;
     height: 80px;
-    margin: 20px;
+    margin: 10px;
+}
+
+.item-ukuran p {
+
 }
 
 .container-ukuran {
@@ -231,6 +235,21 @@ hr.h-color {
         font-size: 15px;
         background-color: #d9d9d9;
         width: 205px;
+    }
+
+    .item-ukuran {
+        background-color: #e3e6ee;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 24px;
+        width: 90px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .item-ukuran p {
+        margin-top: 15px;
+        font-size: 15px;
     }
 
     .cart button {
