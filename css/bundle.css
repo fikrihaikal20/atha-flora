@@ -111,6 +111,15 @@ h3,.seeAll{
 .nama p{
     margin: 5px auto;
 }
+
+#logoHome {
+  margin-left: 100px;
+  margin-top: 10px;
+  max-width: 150%;
+  height: auto;
+}
+
+
 .logo{
     width: 60px;
     height: 60px;
@@ -174,4 +183,32 @@ h3,.seeAll{
     font-family: "openSans";
     font-size: 48px;
     margin: 35px auto;
+  }
+
+  .bi-list {
+    font-size: 5rem;
+   }
+
+   .logo-judul{
+    margin-right: 80px;
+  }
+
+  @media (max-width: 576px) {
+    #logoHome {
+      width: 70%;
+      margin-top: 5px;
+    }
+  
+    .logo-judul{
+      margin-right: 0px;
+    }
+  
+    .logo {
+      margin-right: 0px;
+    }
+  
+    .bi-list {
+      font-size: 12vw;
+     }
+
   }
