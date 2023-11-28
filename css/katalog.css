@@ -21,7 +21,6 @@ header i{
 }
 
 .bi-list {
-  margin-top: 15px;
  font-size: 5rem;
 }
 
@@ -200,7 +199,6 @@ hr.h-color {
 
   .menu{
     align-items: center;
-    margin-top: 10px;
   }
 
   .bi-list {
