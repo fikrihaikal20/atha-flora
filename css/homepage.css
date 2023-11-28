@@ -11,12 +11,13 @@
 }
 
 #logoHome {
-  margin-top: 15px;
+  margin-top: 10px;
   max-width: 150%;
   height: auto;
 }
 
 .bi-list {
+  margin-top: 15px;
  font-size: 5rem;
 }
 
@@ -230,7 +231,7 @@ h3,.seeAll{
     margin-top: 5px;
   }
   .bi-list {
-   font-size: 9vw;
+   font-size: 12vw;
   }
 
   .imgClick {
