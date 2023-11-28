@@ -5,9 +5,9 @@
 
 .custom {
     background: #eeebe3;
-    padding: 0px 70px 50px 70px;
+    /* padding: 0px 70px 50px 70px;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 #MENU,
@@ -85,14 +85,14 @@ h2 {
     align-items: center;
 }
 
-.add-box button{
+.add-box button {
     background-color: #B7ACAC;
     height: 50px;
     width: 30%;
     border: #000 solid;
 }
 
-.add-box span{
+.add-box span {
     font-size: 20px;
     font-weight: bold;
 }
@@ -185,7 +185,45 @@ hr.h-color {
     color: #000;
 }
 
+#logoHome {
+    margin-left: 100px;
+    margin-top: 10px;
+    max-width: 150%;
+    height: auto;
+}
+
+
+.bi-list {
+    font-size: 5rem;
+}
+
+.logo-judul{
+    margin-right: 80px;
+  }
+
 @media (max-width: 576px) {
+
+    .bi-list {
+        font-size: 12vw;
+    }
+
+    #logoHome {
+        width: 70%;
+        margin-top: 5px;
+    }
+
+    .logo-judul {
+        margin-right: 0px;
+    }
+
+    .logo {
+        margin-right: 0px;
+    }
+
+    .judul{
+        font-size: 24px;
+      }
+
     .nama {
         padding: 10px;
         border-radius: 20px;
@@ -194,6 +232,7 @@ hr.h-color {
         background-color: #d9d9d9;
         width: 205px;
     }
+
     .cart button {
         width: 50%;
         height: 50px;
