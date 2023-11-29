@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eeebe3;
+}
+
+.pembayaran {
+    background: #eeebe3;
+}
+
+
+/* header */
+
+.sidebar a,
+.Header a {
+    color: #000;
+    /* Sesuaikan warna teks sesuai kebutuhan Anda */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    display: block;
+    padding: 1rem;
+}
+
+
+.sidebar li.active a,
+.sidebar li.active a:hover {
+    color: #000;
+}
+
+.sidebar li a {
+    color: #000;
+}
+
+.judul {
+    text-align: center;
+    font-family: "openSans";
+    font-size: 48px;
+    margin: 35px auto;
+}
+
+
+.bi-caret-left {
+    font-size: 4rem;
+}
+
+
+/* akhir header */
+
+
+/* pilih metode */
+.pilih-metode p {
+    padding: 10px;
+    font-size: 20px;
+    width: 25%;
+    background-color: #D9D9D9;
+    font-weight: bold;
+}
+
+/* akhir pilih metode */
+
+
+/* cod */
+
+.container-cod{
+    padding: 20px;
+    background-color: #D9D9D9;
+}
+
+.bi-currency-dollar, .bi-record-circle, .bi-wallet, .bi-caret-down-fill, .bi-caret-up-fill {
+    font-size: 2rem;
+}
+
+.bi-record-circle {
+    margin-right: 20px;
+}
+
+.text p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* E-wallet */
+.container-wallet .text p{
+    margin-left: 10px;
+}
+
+.container-wallet{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #D9D9D9;
+}
+
+.logo p{
+    margin-left: 10px;
+}
+.container-wallet img{
+    width: 65px;
+}
+
+.danaLogo, .gopayLogo, .ovoLogo,
+.bniLogo, .briLogo, .bcaLogo {
+    margin-top: 10px;
+}
+
+/* konfirmasi */
+.konfirmasi button{
+    font-size: 20px;
+    font-weight: bold;
+    border-color: #D9D9D9;
+    background-color: #D9D9D9;
+}
+
+
+@media (max-width: 576px) {
+    .judul {
+        font-size: 26px;
+    }
+
+    .icon-caret {
+        margin-top: 10px;
+    }
+
+    .bi-caret-left {
+        font-size: 2rem;
+    }
+
+    /* pilih metode */
+
+    .pilih-metode p {
+        text-align: center;
+        padding: 10px;
+        font-size: 15px;
+        width: 50%;
+        background-color: #D9D9D9;
+        font-weight: bold;
+    }
+
+    /* cod */
+
+    .text p{
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .bi-record-circle {
+        margin-right: 0px;
+    }
+}

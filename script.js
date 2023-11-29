@@ -31,3 +31,27 @@ function kurang(element) {
       element.parentNode.querySelector('.jumlah').innerHTML = count;
   }
 }
+
+$("#arrowUp").click(function () {
+  $(".danaLogo, .gopayLogo, .ovoLogo").removeClass("d-none").addClass("d-flex");
+  $("#arrowUp").addClass("d-none");
+  $("#arrowDown").removeClass("d-none");
+});
+
+$("#arrowDown").click(function () {
+  $(".danaLogo, .gopayLogo, .ovoLogo").removeClass("d-flex").addClass("d-none");
+  $("#arrowUp").removeClass("d-none");
+  $("#arrowDown").addClass("d-none");
+});
+
+$("#arrowUp2").click(function () {
+  $(".bcaLogo, .briLogo, .bniLogo").removeClass("d-none").addClass("d-flex");
+  $("#arrowUp2").addClass("d-none");
+  $("#arrowDown2").removeClass("d-none");
+});
+
+$("#arrowDown2").click(function () {
+  $(".bcaLogo, .briLogo, .bniLogo").removeClass("d-flex").addClass("d-none");
+  $("#arrowUp2").removeClass("d-none");
+  $("#arrowDown2").addClass("d-none");
+});
