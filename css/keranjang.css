@@ -127,7 +127,41 @@ hr.h-color {
   font-size: 2rem;
 }
 
+.bi-caret-left{
+  font-size: 4rem;
+}
+
+.text p{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
 @media (max-width: 576px) {
+
+  img{
+    margin-top: 20px;
+    width: 40%;
+    height: 40%;
+  }
+
+  .text p{
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .icon-caret{
+    margin-top: 15px;
+  }
+
+  .bi-caret-left{
+    font-size: 2rem;
+  }
+
+  .judul {
+    font-size: 36px;
+  }
+
   .pilih-metode{
     font-size: 16px;
     font-weight: bold;
@@ -149,11 +183,6 @@ hr.h-color {
 
   .bayar h5 {
       font-size: 20px;
-  }
-
-  .total-pesanan p{
-    font-size: 16px;
-    font-weight: bold;
   }
 
   .total-fix p{
