@@ -103,6 +103,61 @@ hr.h-color {
     padding: 8px;
 }
 
-/* // Small devices (landscape phones, 576px and up) */
+.bayar h5 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.total-pesanan p{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.total-fix p{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.metode-pembayaran p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.metode-pembayaran i{
+  font-size: 2rem;
+}
+
 @media (max-width: 576px) {
+  .pilih-metode{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  .pilih-metode i{
+    font-size: 2rem;
+  }
+
+  .metode-pembayaran .metode{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .metode-pembayaran i{
+    font-size: 2rem;
+  }
+
+  .bayar h5 {
+      font-size: 20px;
+  }
+
+  .total-pesanan p{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .total-fix p{
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
