@@ -5,6 +5,10 @@ body{
   background-color: #eeebe3;
 }
 
+h3, p, h2, h1{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .akun {
   background: #eeebe3;
   /* padding: 0px 70px 50px 70px; */

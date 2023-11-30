@@ -12,6 +12,10 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+h3, p, h2, h1{
+    font-family: 'Open Sans', sans-serif;
+  }
+  
 .header p{
     margin: auto 10px;
     font-size: 24px;

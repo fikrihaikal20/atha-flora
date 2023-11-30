@@ -10,6 +10,9 @@ body {
     background: #eeebe3;
 }
 
+h3, p, h2, h1{
+    font-family: 'Open Sans', sans-serif;
+  }
 
 /* header */
 

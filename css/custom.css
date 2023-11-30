@@ -10,6 +10,10 @@
     overflow: hidden; */
 }
 
+h3, p, h2, h1{
+    font-family: 'Open Sans', sans-serif;
+  }
+
 #MENU,
 #back {
     width: 50px;

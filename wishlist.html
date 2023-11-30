@@ -1,272 +1,226 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap Icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-    />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <title>Wishlist</title>
-    <link rel="stylesheet" type="text/css" href="css/keranjang.css" />
-  </head>
+  <!-- Bootstrap Icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
 
-  <body>
-    <div class="wishlist">
-      <div class="Header container z-1 d-flex justify-content-between">
-        <!-- list Menu -->
-        <div
-          class="menu"
-          style="cursor: pointer; z-index: 2; align-self: center"
-        >
-          <i class="bi bi-list"></i>
-        </div>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playpen+Sans&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
 
-        <!-- Navbar -->
-        <div
-          class="navlink d-flex justify-content-center"
-          style="position: relative; z-index: 1; margin-right: 70px"
-        >
-          <!-- LOGO -->
-          <h2 class="judul">Wishlist</h2>
-        </div>
+  <title>Wishlist</title>
+  <link rel="stylesheet" type="text/css" href="css/keranjang.css" />
+</head>
 
-        <div
-          class="menu"
-          style="cursor: pointer; z-index: 2; align-self: center"
-        ></div>
+<body>
+  <div class="wishlist">
+    <div class="Header container z-1 d-flex justify-content-between">
+      <!-- list Menu -->
+      <div class="menu" style="cursor: pointer; z-index: 2; align-self: center">
+        <i class="bi bi-list"></i>
       </div>
 
-      <!-- sidebar -->
-      <div class="main-container d-flex d-none">
-        <div class="sidebar" id="side_nav">
-          <ul class="list-unstyled px-2">
-            <!-- Close icon -->
-            <li>
-              <a href=""><i class="bi bi-x" style="font-size: 3rem"></i></a>
-            </li>
-
-            <li class="active">
-              <a href="Homepage.html" class="text-decoration-none px-3 py-2 d-block"
-                >HOME</a
-              >
-            </li>
-
-            <li class="">
-              <a
-                href="Katalog.html"
-                class="text-decoration-none px-3 py-2 d-block"
-                >KATALOG</a
-              >
-            </li>
-
-            <li class="">
-              <a
-                href="BundlePromo.html"
-                class="text-decoration-none px-3 py-2 d-block"
-                >BUNDLE & PROMOTION</a
-              >
-            </li>
-
-            <li class="">
-              <a
-                href="CustomBucket.html"
-                class="text-decoration-none px-3 py-2 d-block"
-                >CUSTOM BUCKET</a
-              >
-            </li>
-
-            <li class="">
-              <a
-                href="wishlist.html"
-                class="text-decoration-none px-3 py-2 d-block"
-                >WISHLIST</a
-              >
-            </li>
-
-            <li class="">
-              <a href="keranjang.html" class="text-decoration-none px-3 py-2 d-block"
-                >KERANJANG</a
-              >
-            </li>
-            <li class=""><a href="Homepage.html#about-us" class="text-decoration-none px-3 py-2 d-block">ABOUT US</a></li>
-
-            <hr class="h-color mx-2" />
-
-            <li class="">
-              <a href="akun.html" class="text-decoration-none px-3 py-2 d-block"
-                >AKUN SAYA</a
-              >
-            </li>
-
-            <li class="">
-              <a href="#" data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop" class="text-decoration-none px-3 py-2 d-block"
-                >LOG OUT</a
-              >
-            </li>
-          </ul>
-        </div>
+      <!-- Navbar -->
+      <div class="navlink d-flex justify-content-center" style="position: relative; z-index: 1; margin-right: 70px">
+        <!-- LOGO -->
+        <h2 class="judul">Wishlist</h2>
       </div>
 
-			<!-- product list -->
-			<div class="container product-list">
-				<div class="box-product" style="text-align: center;">
-					Product List :
-				</div>
-			</div>
+      <div class="menu" style="cursor: pointer; z-index: 2; align-self: center"></div>
+    </div>
 
-			<!-- Accordion -->
-			<div class="container mt-5 accordion" id="accordionPanelsStayOpenExample">
-				<div class="accordion-item" >
-					<h2 class="accordion-header" id="panelsStayOpen-headingOne">
-						<button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-							Evoleth
-						</button>
-					</h2>
-					<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-						<div class="accordion-body d-flex justify-content-around">
-							<img src="images/image 11.png" alt="">
-							<div >
-								<p class="my-auto mt-3"><b>Rp.90.000</b></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item" >
-					<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-						<button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
-							Kaktus
-						</button>
-					</h2>
-					<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
-						<div class="accordion-body d-flex justify-content-around">
-							<img src="images/image 10.png" alt="">
-							<div >
-								<p class="my-auto mt-3"><b>Rp.60.000</b></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item" >
-					<h2 class="accordion-header" id="panelsStayOpen-headingThree">
-						<button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
-							Begonia
-						</button>
-					</h2>
-					<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
-						<div class="accordion-body d-flex justify-content-around">
-							<img src="images/image 33.png" alt="">
-							<div >
-								<p class="my-auto mt-3"><b>Rp.40.000</b></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="accordion-item" >
-					<h2 class="accordion-header" id="panelsStayOpen-headingFour">
-						<button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
-							Rosye Bear
-						</button>
-					</h2>
-					<div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFour">
-						<div class="accordion-body d-flex justify-content-around">
-							<img src="images/Group 33407.png" alt="">
-							<div >
-								<p class="my-auto mt-3"><b>Rp.120.000</b></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-      <!-- Modal -->
-    <div
-    class="modal fade"
-    id="staticBackdrop"
-    data-bs-backdrop="static"
-    data-bs-keyboard="false"
-    tabindex="-1"
-    aria-labelledby="staticBackdropLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Log Out</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          >
-            <i class="bi bi-x-lg"></i>
+    <!-- sidebar -->
+    <div class="main-container d-flex d-none">
+      <div class="sidebar" id="side_nav">
+        <ul class="list-unstyled px-2">
+          <!-- Close icon -->
+          <li>
+            <a href=""><i class="bi bi-x" style="font-size: 3rem"></i></a>
+          </li>
+
+          <li class="active">
+            <a href="Homepage.html" class="text-decoration-none px-3 py-2 d-block">HOME</a>
+          </li>
+
+          <li class="">
+            <a href="Katalog.html" class="text-decoration-none px-3 py-2 d-block">KATALOG</a>
+          </li>
+
+          <li class="">
+            <a href="BundlePromo.html" class="text-decoration-none px-3 py-2 d-block">BUNDLE & PROMOTION</a>
+          </li>
+
+          <li class="">
+            <a href="CustomBucket.html" class="text-decoration-none px-3 py-2 d-block">CUSTOM BUCKET</a>
+          </li>
+
+          <li class="">
+            <a href="wishlist.html" class="text-decoration-none px-3 py-2 d-block">WISHLIST</a>
+          </li>
+
+          <li class="">
+            <a href="keranjang.html" class="text-decoration-none px-3 py-2 d-block">KERANJANG</a>
+          </li>
+          <li class=""><a href="Homepage.html#about-us" class="text-decoration-none px-3 py-2 d-block">ABOUT US</a></li>
+
+          <hr class="h-color mx-2" />
+
+          <li class="">
+            <a href="akun.html" class="text-decoration-none px-3 py-2 d-block">AKUN SAYA</a>
+          </li>
+
+          <li class="">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+              class="text-decoration-none px-3 py-2 d-block">LOG OUT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- product list -->
+    <div class="container product-list">
+      <div class="box-product" style="text-align: center;">
+        Product List :
+      </div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="container mt-5 accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseOne">
+            Evoleth
           </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body d-flex justify-content-around">
+            <img src="images/image 11.png" alt="">
+            <div>
+              <p class="my-auto mt-3"><b>Rp.90.000</b></p>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          <p>Anda yakin ingin keluar dari akun Anda?</p>
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Kembali
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseTwo">
+            Kaktus
           </button>
-          <a href="Homepage.html"><button type="button" class="btn btn-primary">Yakin</button>
-          </a>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body d-flex justify-content-around">
+            <img src="images/image 10.png" alt="">
+            <div>
+              <p class="my-auto mt-3"><b>Rp.60.000</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseThree">
+            Begonia
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body d-flex justify-content-around">
+            <img src="images/image 33.png" alt="">
+            <div>
+              <p class="my-auto mt-3"><b>Rp.40.000</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true"
+            aria-controls="panelsStayOpen-collapseFour">
+            Rosye Bear
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show"
+          aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body d-flex justify-content-around">
+            <img src="images/Group 33407.png" alt="">
+            <div>
+              <p class="my-auto mt-3"><b>Rp.120.000</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Log Out</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Anda yakin ingin keluar dari akun Anda?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Kembali
+            </button>
+            <a href="Homepage.html"><button type="button" class="btn btn-primary">Yakin</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-		</div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <!-- Personal Script -->
-    <script src="script.js"></script>
+  <!-- Personal Script -->
+  <script src="script.js"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 -->
-  </body>
+</body>
+
 </html>

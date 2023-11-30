@@ -179,6 +179,10 @@ hr.h-color {
   color: #000;
 }
 
+h3, p, h2, h1{
+  font-family: 'Open Sans', sans-serif;
+}
+
 .logo-judul{
   margin-right: 80px;
 }
