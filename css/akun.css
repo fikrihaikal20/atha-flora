@@ -39,13 +39,7 @@ body{
   margin: 35px auto;
 }
 
-/* #Akun {
-    width: 60px;
-    height: 60px;
-    position: absolute;
-    left: 1375px;
-    top: 35px;
-  } */
+
 .container-button {
   justify-content: center;
   width: 50%;
@@ -76,18 +70,16 @@ p {
   padding: auto;
 }
 
-.form {
-  top: 300px;
-}
+
 .container-card {
-  margin-top: 100px;
+  margin-top: 50px;
 }
-.waktu {
+/* .waktu {
   display: flex;
   position: absolute;
   left: 240px;
   top: 150px;
-}
+} */
 .waktu i,
 .waktu p,
 .status p,
@@ -95,25 +87,13 @@ p {
   padding: 5px;
 }
 
-.status {
-  display: flex;
-  position: absolute;
-  right: 0px;
-  bottom: 40px;
-  margin: 20px;
-}
-.ulasan {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  margin: 20px;
-  width: 160px;
-}
-.nama {
+
+
+/* .nama {
   position: absolute;
   top: 100px;
   left: 240px;
-}
+} */
 .foto {
   width: 150px;
   height: 150px;
@@ -182,7 +162,40 @@ hr.h-color {
   color: #000;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Optional: Set the height of the container */
+}
+
+.header h2{
+  margin-right: 80px;
+}
+
+
+.kotak {
+  margin-left: 250px;
+}
+
+.ulasan {
+  height: 40px;
+  width: 160px;
+
+}
+
 @media (max-width: 576px) {
+  .kotak {
+    margin-left: 0px;
+  }
+
+  .ulasan {
+    margin-left: 0px;
+  }
+
+  .header h2{
+    margin-right: 0px;
+  }
+
   .judul h2{
     text-align: center;
     font-family: "openSans";

@@ -1,34 +1,27 @@
-body{
+body {
+    box-sizing: border-box;
     background-color: #E4FFAD;
+    padding: 0px 70px;
 }
-
-.form {
+/* .form {
     position: absolute;
     left:0px;
     width:50%;
-}
+} */
 .header{
-    display: flex;
-    margin: 50px 150px;
-    width: 200px;
-    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .header p{
     margin: auto 10px;
     font-size: 24px;
 }
-.konten{
-    display: flex;
-}
-.container{
+/* .container{
     width: 380px;
     height: 540px;
     padding: 20px;
     margin: 10px 200px;
-}
-.logo {
-    width: 20%;
-}
+} */
 .button{
     justify-content: center;
     display: block;
@@ -41,4 +34,32 @@ body{
 }
 .back  {
     width: 50px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 80%;
+}
+
+.teks-form h1{
+    font-weight: bold;
+}
+@media (max-width: 576px) {
+
+    .button-success {
+        text-align: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .logo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .logo img{
+        width: 80%;
+    }
 }

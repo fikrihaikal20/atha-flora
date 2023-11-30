@@ -22,22 +22,46 @@
 			<!-- list Menu -->
 
 			<div class="icon-caret">
-				<a href="checkout.html"><i class="bi bi-caret-left"></i></a>
+				<a href="metode_pembayaran.html"><i class="bi bi-caret-left"></i></a>
 			</div>
 			<!-- LOGO -->
-			<h2 class="judul">Metode Pembayaran</h2>
+			<h2 class="judul">Pembayaran</h2>
 		</div>
 
-		<!-- pilih metode -->
-		<div class="container">
-			<div class="pilih-metode">
-				<p>Pilih Metode Pembayaran</p>
+		<!-- total pembayaran -->
+		<div class="container total-pembayaran d-flex justify-content-between">
+			<div class="">
+				<p>Total pembayaran</p>
 			</div>
+            <div>
+                <p>Rpxxxxxxxxxxx</p>
+            </div>
 		</div>
 
-		<!-- cod -->
+        <!-- bayar dalam -->
+		<div class="container mt-4 total-pembayaran d-flex justify-content-between">
+			<div class="">
+				<p>Bayar Dalam</p>
+			</div>
+            <div>
+                <p>xx jam xx menit xx detik <br>Jatuh tempo xx xx xxxx, xx:xx</p>
+            </div>
+		</div>
 
-		<div class="container container-cod">
+                <!-- bayar dalam -->
+		<div class="container mt-4 total-pembayaran d-flex">
+			<div class="">
+				<img src="Asset/bca.png" alt="">
+			</div>
+            <div style="margin-left: 30px;">
+                <p>Bank BCA <br>No. Rek/Virtual Account <br>xxxxxxxxxxxxxxxxx 
+                <hr style="width: 100%;">    
+                Proses verifikasi kurang dari 10 menit setelah pembayaran berhasil</p>
+            </div>
+		</div>
+
+		<!-- petunjuk -->
+		<div class="container mt-4 container-cod">
 			<div class="cod d-flex justify-content-between">
 				<div class="d-flex">
 					<i class="bi bi-currency-dollar"></i>
@@ -45,30 +69,28 @@
 						<p>COD <br>Cash On Delivery</p>
 					</div>
 				</div>
-
 				<i class="bi bi-record-circle"></i>
 			</div>
 		</div>
 
-		<!-- E-wallet -->
+        		<!-- E-wallet -->
 		<div class="container container-wallet">
 			<div class="cod d-flex justify-content-between">
 				<div class="d-flex">
-					<i class="bi bi-wallet"></i>
+					<i class="bi bi-currency-exchange"></i>
 					<div class="text" style="margin-left: 20px;">
-						<p>Ewallet <br>
-							*Ewallet yang dipilih</p>
+						<p>petunjuk bayar transfer</p>
+                        
 						<div class="d-flex danaLogo d-none">
-							<img src="Asset/DANA.png" alt="">
-							<p>Dana</p>
-						</div>
-						<div class="d-flex gopayLogo d-none">
-							<img src="Asset/gopay.png" alt="">
-							<p>Gopay</p>
-						</div>
-						<div class="d-flex ovoLogo d-none">
-							<img src="Asset/ovo.png" alt="">
-							<p>Ovo</p>
+                            <div class="">
+                                <hr>
+                                <p>Transfer M-Banking</p>
+                                <p>1. Login ke aplikasi BCA mobile. <br>
+                                    2. Pilih fitur "m-Transfer" <br>
+                                    3. Pilih "Transfer Antar Rekening" <br>
+                                    4. Masukkan informasi rekening tujuan, nominal transfer dan berita. <br>
+                                    5. Pastikan kembali informasi transfer sudah benar.</p>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -79,38 +101,10 @@
 			</div>
 		</div>
 
-		<!-- Bank -->
-		<div class="container container-wallet">
-			<div class="cod d-flex justify-content-between">
-				<div class="d-flex">
-					<i class="bi bi-wallet"></i>
-					<div class="text" style="margin-left: 20px;">
-						<p>Transfer Bank <br>
-							*Bank yang dipilih</p>
-						<div class="d-flex bcaLogo d-none">
-							<img src="Asset/bca.png" alt="">
-							<p>Bank BCA</p>
-						</div>
-						<div class="d-flex briLogo d-none">
-							<img src="Asset/bri.png" alt="">
-							<p>Bank BRI</p>
-						</div>
-						<div class="d-flex bniLogo d-none">
-							<img src="Asset/bni.png" alt="">
-							<p>Bank BNI</p>
-						</div>
-					</div>
-				</div>
-
-				<a href="javascript:void(0);" id="arrowUp2" style="color: black;"><i class="bi bi-caret-up-fill"></i></a>
-				<a href="javascript:void(0);" id="arrowDown2" class="d-none" style="color: black;"><i
-						class="bi bi-caret-down-fill"></i></a>
-			</div>
-		</div>
 
 		<!-- konfimasi -->
 		<div class="container konfirmasi mt-4 mb-4 d-flex justify-content-center">
-			<a href="pembayaran.html">
+			<a href="checkout.html">
 				<button >
 					Konfirmasi
 				</button>
