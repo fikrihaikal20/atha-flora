@@ -193,3 +193,19 @@ function selectAddress(addressElement) {
   addressElement.querySelector('.bi-circle').classList.add('d-none');
   addressElement.querySelector('.bi-record-circle').classList.remove('d-none');
 }
+
+function selectDeliveryOption(optionElement) {
+  // Remove the 'selected-option' class from all elements
+  var allOptions = document.querySelectorAll('.delivery-option');
+  allOptions.forEach(function (option) {
+    option.classList.remove('selected-option');
+    option.querySelector('.bi-record-circle').classList.add('d-none');
+    option.querySelector('.bi-circle').classList.remove('d-none');
+  });
+
+  // Add the 'selected-option' class to the clicked element
+  optionElement.classList.add('selected-option');
+  optionElement.querySelector('.bi-circle').classList.add('d-none');
+  optionElement.querySelector('.bi-record-circle').classList.remove('d-none');
+}
+
