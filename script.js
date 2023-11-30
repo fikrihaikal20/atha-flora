@@ -55,3 +55,141 @@ $("#arrowDown2").click(function () {
   $("#arrowUp2").removeClass("d-none");
   $("#arrowDown2").addClass("d-none");
 });
+
+var maxCapacity = {
+  'Kecil': 5,
+  'Sedang': 10,
+  'Besar': 15,
+  'Jumbo': 20
+};
+
+let ukuranKapasitas;
+let totalHiasan = 0;
+let totalBunga = 0;
+let totalKeseluruhan = 0;
+
+function tambahHiasan(element) {
+    totalHiasan++
+    let count = parseInt(element.parentNode.querySelector('.jumlah').innerHTML);
+    count++;
+    element.parentNode.querySelector('.jumlah').innerHTML = count;
+    console.log(count)
+
+    console.log('total hiasan: ',totalHiasan)
+    updateTotal()
+}
+
+function kurangHiasan(element) {
+  totalHiasan--
+  let count = parseInt(element.parentNode.querySelector('.jumlah').innerHTML);
+  count--;
+  element.parentNode.querySelector('.jumlah').innerHTML = count;
+  console.log(count)
+
+  console.log('total hiasan: ',totalHiasan)
+  updateTotal()
+}
+
+function tambah(element) {
+
+  console.log(maxCapacity[ukuranKapasitas])
+  if (totalBunga < maxCapacity[ukuranKapasitas]) {
+    totalBunga++
+    let count = parseInt(element.parentNode.querySelector('.jumlah').innerHTML);
+    count++;
+    element.parentNode.querySelector('.jumlah').innerHTML = count;
+    console.log(count)
+    console.log('totalBunga: ',totalBunga)
+  
+    // var jumlahElement = element.parentElement.querySelector('.jumlah');
+    var size = element.parentElement.parentElement.querySelector('.nama p').innerText.trim();
+
+    console.log('tes')
+
+    
+
+    updateTotal();
+  } else {
+    alert('Maksimal kapasitas telah tercapai!');
+  }
+
+}
+
+function kurang(element) {
+  var jumlahElement = element.parentElement.querySelector('.jumlah');
+  var jumlah = parseInt(jumlahElement.innerText);
+
+  if (jumlah > 0) {
+    totalBunga--;
+    let count = parseInt(element.parentNode.querySelector('.jumlah').innerHTML);
+    count--;
+    element.parentNode.querySelector('.jumlah').innerHTML = count;
+    console.log(count)
+    console.log('totalBunga: ',totalBunga)
+  }
+  
+  updateTotal();
+}
+
+function updateTotal() {
+
+  totalKeseluruhan = totalBunga + totalHiasan
+
+  console.log('total keseluruhan', totalKeseluruhan)
+
+  document.getElementById('total-pesanan').innerText = 'TOTAL PESAN ' + totalKeseluruhan;
+
+  console.log('ini update')
+
+  
+}
+
+function addToCart() {
+  // Implement your logic to add items to the cart here
+  // You can access the quantities and other details from the DOM
+  alert('Items added to cart!');
+}
+
+
+function selectSize(size) {
+  totalBunga = 0
+  var jumlahElements = document.querySelectorAll('.jumlah');
+
+  jumlahElements.forEach(function (element) {
+    element.innerText = '0'
+  });
+  ukuranKapasitas = size;
+
+  // Remove the 'selected' class from all elements
+  var allItems = document.querySelectorAll('.item-ukuran');
+  allItems.forEach(function (item) {
+    console.log(allItems)
+    item.classList.remove('selected');
+  });
+
+  console.log(allItems)
+
+  // Add the 'selected' class to the clicked element
+  var selectedElement = document.querySelector(`.item-ukuran button[data-size='${size}']`);
+  console.log(selectedElement)
+  selectedElement.parentElement.classList.add('selected');
+
+  alert('Selected Size: ' + size);
+}
+
+function selectAddress(addressElement) {
+  // Remove the 'selected-address' class from all elements
+  var allAddresses = document.querySelectorAll('.address');
+  allAddresses.forEach(function (address) {
+    address.classList.remove('selected-address');
+    address.querySelector('.address-details button').classList.add('d-none');
+    address.querySelector('.bi-record-circle').classList.add('d-none');
+    address.querySelector('.bi-circle').classList.remove('d-none');
+  });
+
+  // Add the 'selected-address' class to the clicked element
+  addressElement.classList.add('selected-address');
+  addressElement.querySelector('.address-details button').classList.remove('d-none');
+  addressElement.querySelector('.bi-circle').classList.add('d-none');
+  addressElement.querySelector('.bi-record-circle').classList.remove('d-none');
+}

@@ -99,21 +99,20 @@
         </ul>
       </div>
     </div>
-    <!-- Section Pilih Ukuran -->
     <div class="container ukuran">
       <h2>1. Pilih Ukuran yang Diinginkan</h2>
       <div class="row container-ukuran justify-content-center">
         <div class="item-ukuran col-4 col-md-2">
-          <p class="jenis"> <b>Kecil</b> <br /> (5 pcs) </p>
+          <button class="jenis-button" data-size="Kecil" onclick="selectSize('Kecil')"> <b>Kecil</b> <br /> (5 pcs) </button>
         </div>
         <div class="item-ukuran col-4 col-md-2">
-          <p class="jenis"> <b>Sedang</b> <br /> (10 pcs) </p>
+          <button class="jenis-button" data-size="Sedang" onclick="selectSize('Sedang')"> <b>Sedang</b> <br /> (10 pcs) </button>
         </div>
         <div class="item-ukuran col-4 col-md-2">
-          <p class="jenis"> <b>Besar</b> <br /> (15 pcs) </p>
+          <button class="jenis-button" data-size="Besar" onclick="selectSize('Besar')"> <b>Besar</b> <br /> (15 pcs) </button>
         </div>
         <div class="item-ukuran col-4 col-md-2">
-          <p class="jenis"> <b>Jumbo</b> <br /> (20 pcs) </p>
+          <button class="jenis-button" data-size="Jumbo" onclick="selectSize('Jumbo')"> <b>Jumbo</b> <br /> (20 pcs) </button>
         </div>
       </div>
     </div>
@@ -243,9 +242,9 @@
               <p>Rp. 5.000</p>
             </div>
             <div class="add-box col" style="text-align: right;">
-              <button onclick="kurang(this)">-</button>
+              <button onclick="kurangHiasan(this)">-</button>
               <span class="jumlah">0</span>
-              <button onclick="tambah(this)">+</button>
+              <button onclick="tambahHiasan(this)">+</button>
             </div>
           </div>
         </div>
@@ -259,9 +258,9 @@
               <p>Rp. 2.000</p>
             </div>
             <div class="add-box col" style="text-align: right;">
-              <button onclick="kurang(this)">-</button>
+              <button onclick="kurangHiasan(this)">-</button>
               <span class="jumlah">0</span>
-              <button onclick="tambah(this)">+</button>
+              <button onclick="tambahHiasan(this)">+</button>
             </div>
           </div>
         </div>
@@ -275,9 +274,9 @@
               <p>Rp. 30.000</p>
             </div>
             <div class="add-box col" style="text-align: right;">
-              <button onclick="kurang(this)">-</button>
+              <button onclick="kurangHiasan(this)">-</button>
               <span class="jumlah">0</span>
-              <button onclick="tambah(this)">+</button>
+              <button onclick="tambahHiasan(this)">+</button>
             </div>
           </div>
         </div>
@@ -285,7 +284,10 @@
     </div>
 
     <div class="container cart pb-4" style="text-align: right; margin-top: 50px;">
-      <button id="add">
+      <p style="font-weight: bold;" id="total-pesanan">
+        TOTAL PESAN 0
+      </p>
+      <button id="add" onclick="addToCart()">
         Add to Cart
       </button>
     </div>
@@ -315,19 +317,21 @@
     </div>
 
     <script>
-      function tambah(element) {
-        let count = parseInt(element.parentNode.querySelector('.jumlah').innerHTML);
-        count++;
-        element.parentNode.querySelector('.jumlah').innerHTML = count;
-      }
+      // function tambah(element) {
+      //   let count = parseInt(element.parentNode.querySelector('.jumlah').innerHTML);
+      //   count++;
+      //   element.parentNode.querySelector('.jumlah').innerHTML = count;
+      // }
 
-      function kurang(element) {
-        let count = parseInt(element.parentNode.querySelector('.jumlah').innerHTML);
-        if (count > 0) {
-          count--;
-          element.parentNode.querySelector('.jumlah').innerHTML = count;
-        }
-      }
+      // function kurang(element) {
+      //   let count = parseInt(element.parentNode.querySelector('.jumlah').innerHTML);
+      //   if (count > 0) {
+      //     count--;
+      //     element.parentNode.querySelector('.jumlah').innerHTML = count;
+      //   }
+      // }
+
+      
     </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

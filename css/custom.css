@@ -47,15 +47,26 @@ h2 {
     padding: 20px 0px;
 }
 
+.ukuran button{
+    background-color: transparent;
+    border: transparent;
+}
+
 .item-ukuran {
     background-color: #e3e6ee;
+    
     border-radius: 30px;
     text-align: center;
     font-size: 24px;
     width: 200px;
     height: 80px;
     margin: 10px;
-}
+    transition: border-radius 0.3s; /* Add transition for smooth effect */
+  }
+
+  .item-ukuran.selected {
+    border: #000 solid; /* Adjust the border-radius for the selected state */
+  }
 
 .item-ukuran p {
 
