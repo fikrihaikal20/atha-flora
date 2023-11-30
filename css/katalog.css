@@ -185,6 +185,10 @@ h3, p, h2, h1{
   margin-right: 80px;
 } */
 
+.best-seller{
+  font-size: 32px;
+}
+
 @media (max-width: 576px) {
   #logoHome {
     width: 70%;
@@ -223,8 +227,11 @@ h3, p, h2, h1{
   .judul{
     margin-right: 130px;
     margin-top: 45px;
-    text-align: center;
     font-size: 30px;
+  }
+
+  .best-seller{
+    font-size: 32px;
   }
 
   .nama {
