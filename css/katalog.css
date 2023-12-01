@@ -189,10 +189,23 @@ h3, p, h2, h1{
   font-size: 32px;
 }
 
+.bi-caret-left {
+  font-size: 4rem;
+}
+
+
 @media (max-width: 576px) {
   #logoHome {
     width: 70%;
     margin-top: 5px;
+  }
+
+  .bi-caret-left {
+    font-size: 2rem;
+  }
+
+  .icon-caret {
+    margin-top: 10px;
   }
 
   .logo-judul{
@@ -218,6 +231,7 @@ h3, p, h2, h1{
     font-size: 15px;
   }
   .judul{
+    margin-right: 0px;
     font-size: 24px;
   }
   .container-teks {
@@ -225,8 +239,8 @@ h3, p, h2, h1{
   }
 
   .judul{
-    margin-right: 130px;
-    margin-top: 45px;
+    /* margin-right: 130px;
+    margin-top: 45px; */
     font-size: 30px;
   }
 

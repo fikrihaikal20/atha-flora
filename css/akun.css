@@ -25,7 +25,8 @@ h3, p, h2, h1{
   height: auto;
 }
 
-.logo-judul{
+.logo-
+{
   margin-right: 80px;
 }
 /* #MENU,
@@ -40,6 +41,13 @@ h3, p, h2, h1{
   text-align: center;
   font-family: "openSans";
   font-size: 60px;
+  margin: 35px auto;
+}
+
+.judul {
+  text-align: center;
+  font-family: "openSans";
+  font-size: 48px;
   margin: 35px auto;
 }
 
@@ -178,7 +186,8 @@ hr.h-color {
 
 
 .kotak {
-  margin-left: 250px;
+  width: 50%;
+  /* margin-left: 250px; */
 }
 
 .ulasan {
@@ -187,10 +196,26 @@ hr.h-color {
 
 }
 
+.bi-caret-left {
+  font-size: 4rem;
+}
+
+
 @media (max-width: 576px) {
   .kotak {
+    width: 80%;
     margin-left: 0px;
   }
+  .judul {
+    margin-right: 10px;
+    font-size: 26px;
+}
+.icon-caret {
+  margin-top: 10px;
+}
+.bi-caret-left {
+  font-size: 2rem;
+}
 
   .ulasan {
     margin-left: 0px;

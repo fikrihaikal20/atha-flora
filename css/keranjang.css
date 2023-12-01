@@ -26,7 +26,7 @@ h3, p, h2, h1{
 }
 
 .bi-list {
-  font-size: 6vw;
+  font-size: 5rem;
 }
 
 .imgClick {
@@ -161,7 +161,12 @@ hr.h-color {
     font-size: 2rem;
   }
 
+    .bi-list {
+    font-size: 12vw;
+   }
+
   .judul {
+    margin-right: 10px;
     font-size: 36px;
   }
 

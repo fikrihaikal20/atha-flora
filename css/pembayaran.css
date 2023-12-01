@@ -131,6 +131,7 @@ h3, p, h2, h1{
 
 @media (max-width: 576px) {
     .judul {
+        margin-right: 10px;
         font-size: 26px;
     }
 
